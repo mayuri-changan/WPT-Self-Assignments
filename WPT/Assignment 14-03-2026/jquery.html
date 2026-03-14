@@ -1,0 +1,35 @@
+<!-- Write a jQuery program to get a single element from a selection of elements of a
+HTML page. -->
+<html>
+<head>
+<title>jQuery</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("button").click(function(){
+
+        var element = $("p").get(3);   
+        $(element).css("color","red");
+
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<p>Hello HTML page 1</p>
+<p>Hello HTML page 2</p>
+<p>Hello HTML page 3</p>
+<p>Hello HTML page 4</p>
+<p>Hello HTML page 5</p>
+
+<button>Click Here</button>
+
+</body>
+</html>
